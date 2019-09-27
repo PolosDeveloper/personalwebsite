@@ -5,23 +5,57 @@
 /* affects the body tad of this current file */
 body {
   background-color: #F7F7F7;
-}
-
-hr {
-  border-style: none; /* porque o CSS tem defaults values e tivemos de os "subscrever" */
-  border-top-style: dotted;
-  border-color: #000000;
-  border-width: 5px;
-  width: 5%; /* 15% de toda a widht da página se está a ser visto no PC ou no tele */
+  margin: 0;                      /* para ficar tudo colado à pagina, isto é, sem margens */
+  text-align: center;
+  font-family: 'Merriweather', serif;
 }
 
 h1 {
-  color: #1e836c;
+  color: rgb(195, 61, 68);
+  font-family: 'Sacramento', cursive;
+  font-size: 3.625rem;          /* tamanho da Letra && permite que uma pessoa ajuste a página do seu browser em tamanho */
+  margin: 50px auto 0 215px;
 }
 
 h2 {
-  color: #45b29a;
+  color: rgb(252, 145, 75);
+  font-family: 'Vollkorn SC', serif;
+  font-size: 2.5rem;
+  margin: 0 auto 0 315px;
 }
+
+h3 {
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  line-height: 2;               /* espaço entre as linhas do parágrafo */
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+
 
 /* #########################--- CLASS SELECTORS ---######################### */
 
@@ -29,6 +63,140 @@ h2 {
 img tag's but who want them all to have different background-colors, so you should
 use class selectors */
 
-.main_picture {
+.main-picture {
+  border-radius: 60%;
+}
+
+.intro {
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
+.mountain-image {
+  border-radius: 15%;
+  position: absolute;
+  top: 25px;
+  left: 65px;
+  bottom: 0px;
+}
+
+.code-img {
   border-radius: 20%;
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.a-bit-about-myself {
+  width: 60%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.a-bit-about-myself-row {
+  padding: 10px;
+}
+
+.main-skills-img {
+  border-radius: 20%;
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.top {
+  margin-top: 35px;
+}
+
+.emoji-verde {
+  color: green;
+  padding-right: 20px;
+}
+
+.icon {
+  padding-right: 20px;
+}
+
+.icon-in-text {
+  font-family: 'Istok Web', sans-serif;
+}
+
+.underline-text {
+  text-decoration: underline;
+}
+
+.pad {
+  margin-top: 25px;
+}
+
+.first-hr {
+  border: 0;
+  height: 1.2px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  width: 97%;                    /* tamanho da linha */
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 40px;
+}
+
+
+
+/* #########################--- ID's SELECTORS ---######################### */
+#top-container {
+  position: relative;
+  padding-top: 100px;
+}
+
+#text-presentation {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 192px;      /* para conseguir alinhar a mountain-image com a linha */
+}
+
+#middle-container {
+  position: relative;
+  padding-top: 85px;    /* afastar um pouco da linha */
+}
+
+#bottom-container {
+  background-color: #11999E;
+  padding: 50px 0 20px;
+  text-align: center;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
 }

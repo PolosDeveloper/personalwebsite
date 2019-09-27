@@ -7,156 +7,184 @@
 
     <!-- call for CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="Favicons/favicon.ico">
+
+    <!-- font da página com recorrência a 1 das APIs do GOOGLE -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web&display=swap" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
   </head>
 
   <body>
 
-    <table cellspacing="20"> <!-- cellspacing margem da tabela a partir da extremidade da página -->
-      <tr>
-        <td>
-          <img class="main_picture" src="Images\catia_personal_photo.png" alt="Catia profile picture">
-        </td>
-        <td>
-          <h1>Cátia Pinto</h1>
+    <div id="top-container">
+      <img class="mountain-image" src="Images\mountain_abstract.jpg" alt="Mountain Abstract Image">
+
+      <div id="text-presentation">
+        <h1>Hi! I'm Cátia Pinto.</h1>
+        <h2>a <span class="underline-text">Junior</span> <span class="underline-text">Software</span> Developer</h2>
+      </div>
+
+      <hr class="first-hr">
+    </div>
+
+    <div id="middle-container">
+      <div class="profile">
+        <img class="main-picture" src="Images\catia_personal_photo.png" alt="Catia profile picture">
+
+        <p class="intro">I am a Junior Software Developer and I hope to
+           aspire to a Full Stack developer, Android developer and/or game developer.</p>
+      </div>
+
+      <hr class="first-hr">
+
+      <div class="a-bit-about-myself">
+        <h2>My Skills</h2>
+
+        <!-- about me text -->
+        <div class="a-bit-about-myself-row">
+          <img class="code-img" src="https://media.giphy.com/media/7VSfVewHOPf6E/giphy.gif" alt="code-img">
+
+          <h3>About me</h3>
+
           <p>
-            <em>Junior Software Developer</em>
+            I enjoy on learning more everyday. What I love most is solving problems. I really like
+            the challenge of writing code and sometimes it gets really funny fighting the problem. I
+            enjoy creating a new "world", where each one says something different. But most important,
+            with this degree I can create/implement ways to help others.
           </p>
-        </td>
-      </tr>
-    </table>
+        </div>
 
-    <p>My name is Cátia Pinto and I am a <strong>Junior Software Developer</strong>. <br>I have done
-      several projects over the past three years on the different forms of curricular
-      unit that I had to do to complete my degree. Each project taught me something
-      and made my passion for programming grow. I learned that what I love most is
-      solving problems. I really like the challenge of writing code and sometimes
-      it gets really funny fighting the problem. I enjoy creating a new "world", where
-      each one says something different (web, games, virtual reality, ...).<br>I am a
-      passionate learner and a problem solver. Every day I learn different things about
-      the work I do with different groups of people. I am a member of staff and am
-      always available to help them solve their concerns.
-    </p>
+        <!-- languages i already used -->
+        <div class="a-bit-about-myself-row top">
 
-    <hr>
+          <h3>What I already used</h3>
 
-    <h2>Education</h2>
-    <table>
-      <thead>
-        <tr>
-          <td>Institution</td>
-          <td>Course/Specialization</td>
-          <td>Time</td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>ISEP - Instituto Superior de Engenharia do Porto</strong></td>
-          <td><strong>Master in Software Engineering</strong></td>
-          <td>2018-2020</td>
-        </tr>
-        <tr>
-          <td><strong>UTAD - Universidade de Trás-os-Montes e Alto Douro</strong></td>
-          <td><em>Degree in Computer Engineering</em></td>
-          <td>2015-2018</td>
-        </tr>
-      </tbody>
-      <tfoot>
+          <tr>
+            <td><img src="Images/C-img.png" alt="C"><span class="icon"></span></td>
+            <td><img src="Images/c++-img.png" alt="C++"><span class="icon"></span></td>
+            <td><img src="Images/csharp-img.png" alt="C#"><span class="icon"></span></td>
+            <td><img src="Images/xml-img.png" alt="XML"><span class="icon"></span></td>
+            <td><span class="icon icon-in-text">jQuery</span></td>
+            <td><span class="icon icon-in-text">JSON</span></td>
+            <td><span class="icon"><i class="fab fa-html5 fa-4x" style="color: orange;"></i></span></td>
+            <td><span class="icon"><i class="fab fa-js-square fa-4x" style="color: blue;"></i></span></td>
+            <td><span class="icon"><i class="fab fa-node fa-4x" style="color: green;"></i></span></td>
+            <td><span class="icon"><i class="fab fa-css3-alt fa-4x" style="color: blue;"></i></span></td>
+            <img src="Images/sql-img.png" alt="SQL">
+            <td><span class="icon icon-in-text">Unity 3D</span></td>
+          </tr>
 
-      </tfoot>
-    </table>
+        </div>
 
-    <hr>
+        <!-- Education -->
+        <div class="a-bit-about-myself-row" style="margin-top: 75px;">
+          <img class="code-img pad" src="https://media.giphy.com/media/69qwNhl6kpVTLRmYC1/giphy.gif" alt="university-degree">
 
-    <h2>Works as a Computer Engineer</h2>
-    <ul>
-      <li>
-        <strong>Research Scholarship by ISEP</strong> win at 02/04/2019
-        <br><strong>Scratch teacher</strong> at Escola EB 2,3 Maria Lamas
-        <br>Duration: 30h (1 month and a half)
+          <h3>Education</h3>
 
-        <!-- ficheiro que pode ser transferido -->
-        <br><a href="Personal Files\Calendario_Aulas_Scratch.xlsx" download>Download Calendar Scratch Lessons</a> to see what I taught
-      </li>
-    </ul>
+          <table>
+            <tr>
+              <th>Institution</th>
+              <th>Course/Specialization</td>
+              <th>Time</td>
+            </tr>
+            <tr>
+              <td>ISEP - Instituto Superior de Engenharia do Porto</td>
+              <td>Master in Software Engineering</td>
+              <td>2018-2020</td>
+            </tr>
+            <tr>
+              <td>UTAD - Universidade de Trás-os-Montes e Alto Douro</td>
+              <td>Degree in Computer Engineering</td>
+              <td>2015-2018</td>
+            </tr>
+          </table>
 
-    <hr>
+        </div>
 
-    <h2>Skills</h2>
-    <table cellspacing="10">
-      <tbody>
-        <tr> <!-- first row -->
-          <td>C#</td>
-          <td>⭐⭐⭐</td>
-          <td>C</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr> <!-- second row -->
-          <td>C++</td>
-          <td>⭐⭐⭐</td>
-          <td>.NET Framework</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Bootstrap Framework</td>
-          <td>⭐⭐⭐</td>
-          <td>CSS(3)</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>HTML(5)</td>
-          <td>⭐⭐⭐</td>
-          <td>JSON</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>MySQL</td>
-          <td>⭐⭐⭐</td>
-          <td>XML</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Command Line Interface</td>
-          <td>⭐⭐⭐</td>
-          <td>JQuery</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>⭐⭐⭐</td>
-          <td>Javascript</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>MVC Pattern</td>
-          <td>⭐⭐⭐</td>
-          <td>Object Orientated programming</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-        <tr>
-          <td>Scrum</td>
-          <td>⭐⭐⭐</td>
-          <td>UML</td>
-          <td>⭐⭐⭐</td>
-        </tr>
-      </tbody>
-    </table>
+        <!-- Works as a Computer Engineer -->
+        <div class="a-bit-about-myself-row" style="margin-top: 75px;">
+          <img class="main-skills-img" style="margin-top: 75px;" src="https://media.giphy.com/media/8JW82ndaYfmNoYAekM/giphy.gif" alt="works">
 
-    <hr>
+          <h3>Works as a Computer Engineer</h3>
 
-    <h2>Achievements/Experience</h2>
-    <ul>
-      <li>
-        <strong>Completed </strong>"<a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete 2019 Web Development Bootcamp</a>"
-      </li>
-    </ul>
+          <table>
+            <tr>
+              <th>From...</th>
+              <th>Doing what?</td>
+              <th>Duration</td>
+            </tr>
+            <tr>
+              <td>Research Scholarship by ISEP  win at 02/04/2019</td>
+              <td>Scratch teacher</td>
+              <td>30h (1 month and a half)</td>
+            </tr>
+            <tr>
+              <td>Massive Lab (UTAD) win at 02/2018</td>
+              <td>Tracking humanoide in virtual reality</td>
+              <td>a full semester</td>
+            </tr>
+          </table>
 
-    <hr>
+        </div>
 
-    <h2>Languages</h2>
+        <!-- Achievements/Experience -->
+        <div class="a-bit-about-myself-row" style="margin-top: 55px;">
 
-    <hr>
+          <h3>Achievements/Experience</h3>
 
-    <p><a href="Aditional Web Pages\contact_me.html">Contact Me</a></p>
+        <table>
+          <tr>
+            <td>
+              <strong>Completed </strong>"<a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">The Complete 2019 Web Development Bootcamp</a>"
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <strong>65% completed </strong>"<a href="https://www.udemy.com/course/curso-completo-de-web-desenvolvimento-20/">The Complete Web Deceloper Course 2.0</a>"
+            </td>
+          </tr>
+        </table>
+
+        </div>
+
+        <!-- Languages -->
+        <div class="a-bit-about-myself-row" style="margin-top: 55px;">
+
+          <h3>Languages</h3>
+
+          <p><strong>English </strong></p>
+          <p><strong>Portuguese </strong></p>
+
+        </div>
+
+        <hr class="first-hr">
+
+        <h2 style="padding-top: 25px;">Get In Touch</h2>
+
+        <!-- Get in Touch -->
+        <div class="contact-me">
+
+          <h3 style="text-align: center;">If you liked what you saw...</h3>
+          <p class="contact-message" style="margin-left: 350px; margin-top: 15px;">And you want to hire me...</p>
+          <a class="btn" style="margin-left: 365px;" href="mailto:catiapspinto96@gmail.com">CONTACT ME</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="bottom-container">
+
+      <a class="footer-link" href="https://www.linkedin.com/in/catiapinto1996/">Linkedin</a>
+      <a class="footer-link" href="https://github.com/PolosDeveloper">Github</a>
+      <p class="copyright">© 2019 Cátia Pinto @ PolosDeveloper</p>
+
+    </div>
+
 
   </body>
 
